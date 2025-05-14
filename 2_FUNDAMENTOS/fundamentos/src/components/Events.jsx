@@ -16,7 +16,7 @@ const Events = () => {
         }
     }
 
-    return 10> 2 && <p>Carregando...</p>;
+    // return 10> 2 && <p>Carregando...</p>;
   return (
     <div>
         <div>
