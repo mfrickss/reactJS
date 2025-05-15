@@ -9,7 +9,15 @@ import Data from './components/Data';
 
 // 4 - Renderização de lista
 import ListRender from './components/listRender';
+
+// 7 - Conditional Render
 import ConditionalRender from './components/ConditionalRender';
+
+// 8 - Props
+import ShowUserName from './components/ShowUserName';
+
+// 9 - Desestruturando props
+import CarDetails from './components/CarDetails';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -31,6 +39,13 @@ function App() {
         {/* 7 - Render condicional */}
         <hr></hr>
         <ConditionalRender />
+        {/* 8 - Props */}
+        <hr></hr>
+        <ShowUserName name="Anna Beatriz"/>
+        {/* 9 - desestruturando props*/}
+        <hr></hr>
+        <CarDetails brand="Civic" km={328} color="Gray" />
+
       </div>
     </>
   )
