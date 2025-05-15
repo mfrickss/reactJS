@@ -45,6 +45,12 @@ function App() {
         {/* 9 - desestruturando props*/}
         <hr></hr>
         <CarDetails brand="Civic" km={328} color="Gray" />
+        {/* 10 - Reutilizando componentes */}
+        <hr></hr>
+        <h2>Reutilizando componentes</h2>
+        <CarDetails brand="Nissan" km={953} color="Gray" />
+        <CarDetails brand="Audi" km={833} color="Black" />
+        <CarDetails brand="Toyota" km={253} color="Red" />
 
       </div>
     </>
