@@ -18,6 +18,14 @@ import ShowUserName from './components/ShowUserName';
 
 // 9 - Desestruturando props
 import CarDetails from './components/CarDetails';
+import Fragment from './components/Fragment';
+
+// 11 - Renderização de componentes
+const cars = [
+  { id: 1, brand: "Ferrari", color: "White", km: 0},
+  { id: 2, brand: "KIA", color: "Yellow", km: 20000},
+  { id: 3, brand: "Renault", color: "Blue", km: 34340},
+];
 
 function App() {
   const [count, setCount] = useState(0)
@@ -51,6 +59,14 @@ function App() {
         <CarDetails brand="Nissan" km={953} color="Gray" />
         <CarDetails brand="Audi" km={833} color="Black" />
         <CarDetails brand="Toyota" km={253} color="Red" />
+        {/* 11 - Render de lista de componentes com loop */}
+        <hr />
+        {cars.map((car) =>(
+          <CarDetails key={car.id} brand={car.brand} color={car.color} km={car.km}/>
+        ))}
+        {/* 12 - Fragmentação */}
+        <hr />
+        <Fragment />
 
       </div>
     </>
